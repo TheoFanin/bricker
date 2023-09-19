@@ -1,0 +1,223 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+/* Fuentes */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Quicksand:wght@500&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Lato&display=swap'); */
+
+/* 
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+header{
+  position: absolute;
+  width: 100%;
+}
+header nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% auto;
+  grid-template-rows: auto;
+  /* background: rgb(85, 83, 83); */
+  background: transparent;
+  font-family: "Quicksand", sans-serif;
+  height: 140px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* body {
+  background-image: url(../img/fondo_main.jpg);
+  background-repeat: no-repeat; 
+} */
+
+.logo {
+  width: 100px;
+  height: 100px;
+  transition-duration: 0.4s;
+  background-image: url(../img/Logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo:hover {
+  background-image: url(../img/Logo\ Hover.png);
+  transform: scale(1.2);
+  transition-duration: 0.4s;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration-line: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+header nav ul li a:hover {
+  transition-duration: 0.4s;
+  font-size: 40px;
+}
+
+/* Main */
+.primera_parte_main {
+  background-image: url(../img/fondo_main.jpg);
+  background-repeat: no-repeat;
+  height: 180vh;
+}
+
+.titulo_main {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  padding: 150px 0px 50px 0px;
+  font-size: 60px;
+  color: white;
+  text-shadow: black 2px 0px 3px;
+}
+
+.subtitulo_main {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: black 2px 0px 3px;
+  padding: 0px 0px 70px 0px;
+}
+
+.contenedor_equipo {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.imagen_equipo {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.card_equipo {
+  border-radius: 7%;
+  background-color: rgba(255, 255, 255, 0.753);
+  border: #0097b2 solid 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 240px;
+  height: 220px;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.card_equipo:hover {
+  height: 630px;
+  transition: 0.6s;
+  border-color: black;
+}
+
+.nombre_equipo {
+  font-family: "Poppins", sans-serif;
+  font-size: 150%;
+  text-align: center;
+  color: rgb(5, 5, 5);
+  padding: 20px 0px;
+  font-weight: bold;
+}
+
+.descripcion_equipo {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 110%;
+  text-align: center;
+  color: black;
+  padding: 20px 0px;
+}
+
+.segunda_parte_main{
+  background: url(../img/casa_moderna.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo_nosotros {
+  /* margin-top: 1000px; */
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 90px; 
+}
+
+.texto_nosotros{
+  width: 60%;
+  background: rgba(0, 0, 0, 0.719);
+  color: rgba(255, 255, 255, 0.829);
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  margin: 140px 0px 0px 0px;
+  /* padding: 0px 140px; */
+}
+
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer-links ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:  space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin: 40px 0px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links i{
+  font-size: 50px;
+}
+
+.footer-links a:hover {
+  color: #ff8800;
+  transition: color 0.3s ease;
+}
+
+.footer-info p {
+  margin: 10px 0;
+  font-size: 14px;
+}
